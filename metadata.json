@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Komorebi Travel - Hand-drawn Trip Planner",
+  "description": "A Japanese stationery-style group travel planner with real-time syncing, expense tracking, and journal features.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Komorebi Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
+            background-color: #F7F4EB;
+            background-image: radial-gradient(#D6C7A1 0.5px, transparent 0.5px);
+            background-size: 20px 20px;
+            overscroll-behavior-y: contain;
+        }
+        .soft-shadow {
+            box-shadow: 4px 4px 0px #E0E5D5;
+        }
+        .inner-soft-shadow {
+            box-shadow: inset 2px 2px 4px rgba(0,0,0,0.05);
+        }
+        /* Custom scrollbar for stationery feel */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D6C7A1;
+            border-radius: 10px;
+        }
+        .safe-bottom {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        beige: {
+                            50: '#FDFCF9',
+                            100: '#F7F4EB',
+                            200: '#EFE9D5',
+                            300: '#E0D5B5'
+                        },
+                        clay: {
+                            green: '#A8BA9A',
+                            dark: '#7A9E7E',
+                        },
+                        brown: {
+                            soft: '#D6C7A1',
+                            deep: '#8E735B'
+                        },
+                        accent: {
+                            orange: '#E6A07E',
+                            blue: '#8CB9BD'
+                        }
+                    },
+                    borderRadius: {
+                        'xl': '1.25rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem'
+                    }
+                }
+            }
+        }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "firebase/": "https://esm.sh/firebase@^12.8.0/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="antialiased text-brown-deep">
+    <div id="root"></div>
+</body>
+</html>
